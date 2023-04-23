@@ -7,13 +7,15 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="mybatis-implement-1" />
+        <module name="mybatis-implement-3" />
         <module name="mybatis-implement-2" />
+        <module name="mybatis-implement-1" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mybatis-implement-1" target="1.8" />
       <module name="mybatis-implement-2" target="1.8" />
+      <module name="mybatis-implement-3" target="1.8" />
       <module name="Mybatis-Simple-Implementation" target="1.8" />
     </bytecodeTargetLevel>
   </component>

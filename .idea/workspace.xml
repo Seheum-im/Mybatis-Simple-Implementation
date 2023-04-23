@@ -2,24 +2,32 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cn_hutool_hutool_all_5_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/mybatis-implement-2.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/src/main/java/cn/seheum/mybatis/binding/MapperProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/src/main/java/cn/seheum/mybatis/binding/MapperProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/src/main/java/cn/seheum/mybatis/binding/MapperRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/src/main/java/cn/seheum/mybatis/session/SqlSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/src/main/java/cn/seheum/mybatis/session/SqlSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/src/test/java/cn/seheum/mybatis/ApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/src/test/java/cn/seheum/mybatis/Dao/ISchoolDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/src/test/java/cn/seheum/mybatis/Dao/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/mybatis-implement-3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/builder/BaseBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/builder/xml/XMLConfigBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/io/Resources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/mapping/MappedStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/mapping/SqlCommandType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/session/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/session/SqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/session/SqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/session/SqlSessionFactoryBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/test/java/cn/seheum/mybatis/test/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/test/java/cn/seheum/mybatis/test/dao/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/test/java/cn/seheum/mybatis/test/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/test/resources/mapper/User_Mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/src/test/resources/mybatis-config-datasource.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mybatis-Simple-Implementation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Mybatis-Simple-Implementation.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-1/mybatis-implement-1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-1/mybatis-implement-1.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-2/src/main/java/cn/seheum/mybatis/binding/MapperRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-2/src/main/java/cn/seheum/mybatis/binding/MapperRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,7 +64,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-implement-2/src/main/java" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-implement-3/src/test/resources" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -70,10 +78,13 @@
       <recent name="cn.seheum.mybatis.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-3\src\test\resources" />
+      <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-3\src\test\resources\mapper" />
+      <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-3\src\main\java" />
       <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-2\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_MapperProxyFactory (1)">
+  <component name="RunManager" selected="JUnit.ApiTest.test_SqlSessionFactory">
     <configuration name="ApiTest.test_MapperProxyFactory (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-implement-2" />
       <extension name="coverage">
@@ -106,8 +117,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiTest.test_SqlSessionFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-implement-3" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.seheum.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.seheum.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.seheum.mybatis.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_SqlSessionFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_SqlSessionFactory" />
         <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory (1)" />
         <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory" />
       </list>
@@ -124,7 +152,7 @@
       <option name="presentableId" value="Default" />
       <updated>1681805229642</updated>
       <workItem from="1681805232037" duration="1496000" />
-      <workItem from="1681806742053" duration="17924000" />
+      <workItem from="1681806742053" duration="38535000" />
     </task>
     <task id="LOCAL-00001" summary="First新增:简单的mapperProxy，用于生成Dao接口的代理类">
       <created>1681874400388</created>
@@ -133,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681874400388</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Second新增：mapper注册器的实现">
+      <created>1681981367303</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1681981367304</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,17 +187,18 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="First新增:简单的mapperProxy，用于生成Dao接口的代理类" />
-    <option name="LAST_COMMIT_MESSAGE" value="First新增:简单的mapperProxy，用于生成Dao接口的代理类" />
+    <MESSAGE value="Second新增：mapper注册器的实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="Second新增：mapper注册器的实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="174" key="#Project_Structure" timestamp="1681871826598">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="552" y="174" key="#Project_Structure/0.0.1920.1032@0.0.1920.1032" timestamp="1681871826598" />
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1681977602178">
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1682058540971">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1681977602178" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1682058540971" />
     <state x="581" y="182" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1681805306215">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -171,62 +207,78 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="713" y="373" width="493" height="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1032@0.0.1920.1032" timestamp="1681872013876" />
-    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1681874399240">
+    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1681981365746">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1681874399240" />
-    <state width="483" height="466" key="DebuggerActiveHint" timestamp="1681978533658">
+    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1681981365746" />
+    <state width="500" height="466" key="DebuggerActiveHint" timestamp="1682235523812">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="483" height="466" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1681978533658" />
+    <state width="500" height="466" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1682235523812" />
+    <state x="197" y="85" key="DiffContextDialog" timestamp="1681981322705">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="197" y="85" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1681981322705" />
     <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1681806786745">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1681806786745" />
-    <state width="1875" height="209" key="GridCell.Tab.0.bottom" timestamp="1681980896473">
+    <state width="1875" height="209" key="GridCell.Tab.0.bottom" timestamp="1682235749676">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="209" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1681980896473" />
-    <state width="1875" height="209" key="GridCell.Tab.0.center" timestamp="1681980896472">
+    <state width="1875" height="209" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1682235749676" />
+    <state width="1875" height="209" key="GridCell.Tab.0.center" timestamp="1682235749676">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="209" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1681980896472" />
-    <state width="1875" height="209" key="GridCell.Tab.0.left" timestamp="1681980896472">
+    <state width="1875" height="209" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1682235749676" />
+    <state width="1875" height="209" key="GridCell.Tab.0.left" timestamp="1682235749676">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="209" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1681980896472" />
-    <state width="1875" height="209" key="GridCell.Tab.0.right" timestamp="1681980896472">
+    <state width="1875" height="209" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1682235749676" />
+    <state width="1875" height="209" key="GridCell.Tab.0.right" timestamp="1682235749676">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="209" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1681980896472" />
-    <state width="1875" height="209" key="GridCell.Tab.1.bottom" timestamp="1681980896473">
+    <state width="1875" height="209" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1682235749676" />
+    <state width="1875" height="209" key="GridCell.Tab.1.bottom" timestamp="1682235749676">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="209" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1681980896473" />
-    <state width="1875" height="209" key="GridCell.Tab.1.center" timestamp="1681980896473">
+    <state width="1875" height="209" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1682235749676" />
+    <state width="1875" height="209" key="GridCell.Tab.1.center" timestamp="1682235749676">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="209" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1681980896473" />
-    <state width="1875" height="209" key="GridCell.Tab.1.left" timestamp="1681980896473">
+    <state width="1875" height="209" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1682235749676" />
+    <state width="1875" height="209" key="GridCell.Tab.1.left" timestamp="1682235749676">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="209" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1681980896473" />
-    <state width="1875" height="209" key="GridCell.Tab.1.right" timestamp="1681980896473">
+    <state width="1875" height="209" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1682235749676" />
+    <state width="1875" height="209" key="GridCell.Tab.1.right" timestamp="1682235749676">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="209" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1681980896473" />
+    <state width="1875" height="209" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1682235749676" />
     <state x="440" y="90" key="SettingsEditor" timestamp="1681974787725">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="440" y="90" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1681974787725" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1681874404932">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1681981537012">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1681874404932" />
-    <state x="342" y="210" key="new project wizard" timestamp="1681875946698">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1681981537012" />
+    <state width="968" height="524" key="XDebugger.FullValuePopup" timestamp="1682232950198">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="342" y="210" key="new project wizard/0.0.1920.1032@0.0.1920.1032" timestamp="1681875946698" />
+    <state width="968" height="524" key="XDebugger.FullValuePopup/0.0.1920.1032@0.0.1920.1032" timestamp="1682232950198" />
+    <state x="342" y="210" key="new project wizard" timestamp="1681981595323">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="342" y="210" key="new project wizard/0.0.1920.1032@0.0.1920.1032" timestamp="1681981595323" />
+    <state x="616" y="238" key="run.anything.popup" timestamp="1682047272739">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="616" y="238" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1682047272739" />
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1682049738742">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1682049738742" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -250,6 +302,36 @@
           <url>file://$PROJECT_DIR$/mybatis-implement-1/src/test/java/cn/seheum/mybatis/ApiTest.java</url>
           <line>21</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-3/src/test/java/cn/seheum/mybatis/test/ApiTest.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperMethod.java</url>
+          <line>24</line>
+          <option name="timeStamp" value="12" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperMethod.java</url>
+          <line>48</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperProxy.java</url>
+          <line>28</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperRegistry.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="17" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

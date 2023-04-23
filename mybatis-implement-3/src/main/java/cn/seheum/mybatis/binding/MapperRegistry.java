@@ -1,10 +1,10 @@
 package cn.seheum.mybatis.binding;
 
 import cn.hutool.core.lang.ClassScanner;
+import cn.seheum.mybatis.session.Configuration;
 import cn.seheum.mybatis.session.SqlSession;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
 
@@ -13,6 +13,13 @@ import java.util.Set;
  * @date 2023/4/20
  */
 public class MapperRegistry {
+
+
+    private Configuration configuration;
+
+    public MapperRegistry(Configuration configuration) {
+        this.configuration = configuration;
+    }
 
     /**
      * 将已添加的mapper代理加入
