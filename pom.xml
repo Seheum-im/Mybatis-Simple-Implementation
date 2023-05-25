@@ -13,6 +13,7 @@
         <module>mybatis-implement-2</module>
         <module>mybatis-implement-3</module>
         <module>mybatis-implement-4</module>
+        <module>mybatis-implement-5</module>
     </modules>
 
     <dependencies>

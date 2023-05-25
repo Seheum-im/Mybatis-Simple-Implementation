@@ -2,40 +2,43 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_protobuf_protobuf_java_3_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/binding/MapperProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/binding/MapperProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/binding/MapperRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/builder/BaseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/builder/xml/XMLConfigBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/datasource/DataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/datasource/druid/DruidDataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/io/Resources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/mapping/BoundSql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/mapping/Environment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/mapping/MappedStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/mapping/SqlCommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/session/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/session/SqlSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/session/SqlSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/session/SqlSessionFactoryBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/session/TransactionIsolationLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/transaction/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/transaction/TransactionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/transaction/jdbc/JdbcTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/transaction/jdbc/JdbcTransactionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/type/TypeAliasRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/test/java/cn/seheum/mybatis/test/ApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/test/java/cn/seheum/mybatis/test/dao/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/test/java/cn/seheum/mybatis/test/po/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/test/resources/mapper/User_Mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-4/src/test/resources/mybatis-config-datasource.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_48.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_20.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/mybatis-implement-5.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/binding/MapperMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/binding/MapperProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/binding/MapperProxyFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/binding/MapperRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/builder/BaseBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/builder/xml/XMLConfigBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/DataSourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/druid/DruidDataSourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PoolState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/unpooled/UnpooledDataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/unpooled/UnpooledDataSourceFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/io/Resources.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/mapping/BoundSql.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/mapping/Environment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/mapping/MappedStatement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/mapping/SqlCommandType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/Configuration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/SqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/SqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/SqlSessionFactoryBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/TransactionIsolationLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSessionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/transaction/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/transaction/TransactionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/transaction/jdbc/JdbcTransaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/transaction/jdbc/JdbcTransactionFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/type/TypeAliasRegistry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-4/mybatis-implement-4.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-4/mybatis-implement-4.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-4/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,8 +78,8 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/small-mybatis-master/mybatis-step-05" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
@@ -89,11 +92,11 @@
       <recent name="cn.seheum.mybatis.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-5\src\main\java" />
       <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-4\src\test\java\cn\seheum\mybatis\test" />
       <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-4\src\test\resources\mapper" />
       <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-4\src\test\resources" />
       <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-4\src\main\java" />
-      <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-3\src\test\resources" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ApiTest.test_SqlSessionFactory (1)">
@@ -204,6 +207,8 @@
       <workItem from="1683792561660" duration="8816000" />
       <workItem from="1683863962834" duration="1303000" />
       <workItem from="1684141763516" duration="18542000" />
+      <workItem from="1684484668539" duration="3917000" />
+      <workItem from="1684810508629" duration="23699000" />
     </task>
     <task id="LOCAL-00001" summary="First新增:简单的mapperProxy，用于生成Dao接口的代理类">
       <created>1681874400388</created>
@@ -233,7 +238,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683864006546</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fourth:对数据源进行连接以及解析">
+      <created>1684484794405</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1684484794405</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,21 +269,22 @@
     <MESSAGE value="Second新增：mapper注册器的实现" />
     <MESSAGE value="third:xml解析和注册mapper" />
     <MESSAGE value="fourth:连接数据库" />
-    <option name="LAST_COMMIT_MESSAGE" value="fourth:连接数据库" />
+    <MESSAGE value="fourth:对数据源进行连接以及解析" />
+    <option name="LAST_COMMIT_MESSAGE" value="fourth:对数据源进行连接以及解析" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="174" key="#Project_Structure" timestamp="1681871826598">
+    <state x="552" y="174" key="#Project_Structure" timestamp="1684486749783">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="174" key="#Project_Structure/0.0.1920.1032@0.0.1920.1032" timestamp="1681871826598" />
+    <state x="552" y="174" key="#Project_Structure/0.0.1920.1032@0.0.1920.1032" timestamp="1684486749783" />
     <state x="690" y="271" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1684205316908">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="690" y="271" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1684205316908" />
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1684204283603">
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1684832737748">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1684204283603" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1684832737748" />
     <state x="581" y="182" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1681805306215">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -280,22 +293,22 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="713" y="373" width="493" height="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1032@0.0.1920.1032" timestamp="1681872013876" />
-    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1683864004780">
+    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1684484792406">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1683864004780" />
+    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1684484792406" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1684221429734">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="507" height="466" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1684221429734" />
-    <state x="197" y="85" key="DiffContextDialog" timestamp="1681981322705">
+    <state x="197" y="85" key="DiffContextDialog" timestamp="1684484776329">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="197" y="85" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1681981322705" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1684143926883">
+    <state x="197" y="85" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1684484776329" />
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1684810590194">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1684143926883" />
+    <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1684810590194" />
     <state width="1875" height="277" key="GridCell.Tab.0.bottom" timestamp="1684283962290">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -336,10 +349,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="561" height="446" key="SwitcherDM/0.0.1920.1032@0.0.1920.1032" timestamp="1683772813870" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1683864056936">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1684484799818">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1683864056936" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1684484799818" />
     <state width="968" height="524" key="XDebugger.FullValuePopup" timestamp="1684218860287">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -348,18 +361,18 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="595" y="306" key="git4idea.merge.GitPullDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1682236181180" />
-    <state x="342" y="210" key="new project wizard" timestamp="1682240556704">
+    <state x="342" y="210" key="new project wizard" timestamp="1684485664535">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="342" y="210" key="new project wizard/0.0.1920.1032@0.0.1920.1032" timestamp="1682240556704" />
+    <state x="342" y="210" key="new project wizard/0.0.1920.1032@0.0.1920.1032" timestamp="1684485664535" />
     <state x="616" y="238" key="run.anything.popup" timestamp="1682047272739">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="616" y="238" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1682047272739" />
-    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1683792466592">
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1684812655356">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1683792466592" />
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1684812655356" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
