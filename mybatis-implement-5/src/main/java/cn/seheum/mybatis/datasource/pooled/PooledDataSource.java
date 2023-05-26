@@ -5,7 +5,12 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.sql.DataSource;
+import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.Proxy;
+import java.sql.Connection;
+import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * @author seheum
@@ -125,13 +130,156 @@ public class PooledDataSource implements DataSource {
                             if(!oldestActiveConnection.getRealConnection().getAutoCommit()) {
                                 oldestActiveConnection.getRealConnection().rollback();
                             }
-                            //TODO 还有继续实现的部分
+                            //删掉存活时间最长的链接，然后重新实例化一个链接
+                            conn = new PooledConnection(oldestActiveConnection.getRealConnection(),this);
+                            oldestActiveConnection.invalidate();
+                            logger.info("Claimed overdue connection " + conn.getRealHashCode() + ".");
+                        }
+                        //如果checkout超时时间不够长，则等待
+                        else {
+
+                            try {
+                                if(!countedWait) {
+                                state.hadToWaitCount++;
+                                countedWait = true;
+                                }
+                                logger.info("Waiting as long as " + poolTimeToWait + " milliseconds for connection.");
+                                long wt = System.currentTimeMillis();
+                                state.wait(poolTimeToWait);
+                                state.accumulatedWaitTime += System.currentTimeMillis() - wt;
+                            } catch (InterruptedException e) {
+                                e.printStackTrace();
+                            }
+                        }
+                    }
+                }
+                //获取链接
+                if(conn != null) {
+                    if(conn.isValid()) {
+                        if(!conn.getRealConnection().getAutoCommit()) {
+                            conn.getRealConnection().rollback();
+                        }
+                        conn.setConnectionTypeCode(assembleConnectionTypeCode(dataSource.getUrl(), username, password));
+                        //记录checkout时间
+                        conn.setCheckoutTimestamp(System.currentTimeMillis());
+                        conn.setLastUsedTimestamp(System.currentTimeMillis());
+                        state.activeConnections.add(conn);
+                        state.requestCount++;
+                        state.accumulatedRequestTime += System.currentTimeMillis() - t;
+                    } else {
+                        logger.info("A bad connection (" + conn.getRealHashCode() + ") was returned from the pool, getting another connection.");
+                        // 如果没拿到，统计信息：失败链接 +1
+                        state.badConnectionCount++;
+                        localBadConnectionCount++;
+                        conn = null;
+                        // 失败次数较多，抛异常
+                        if (localBadConnectionCount > (poolMaximumIdleConnections + 3)) {
+                            logger.debug("PooledDataSource: Could not get a good connection to the database.");
+                            throw new SQLException("PooledDataSource: Could not get a good connection to the database.");
                         }
                     }
                 }
 
+
+
             }
         }
+        if (conn == null) {
+            logger.debug("PooledDataSource: Unknown severe error condition.  The connection pool returned a null connection.");
+            throw new SQLException("PooledDataSource: Unknown severe error condition.  The connection pool returned a null connection.");
+        }
+        return conn;
+    }
+
+    private void forceCloseAll() {
+        synchronized (state) {
+            expectedConnectionTypeCode = assembleConnectionTypeCode(dataSource.getUrl(),dataSource.getUsername(),dataSource.getPassword());
+            //关闭活跃链接数
+            for(int i = state.activeConnections.size();i > 0;i--) {
+
+                try {
+                    PooledConnection conn = state.activeConnections.remove(i - 1);
+                    conn.invalidate();
+
+                    Connection realConn = conn.getRealConnection();
+                    if(!realConn.getAutoCommit()) {
+                        realConn.rollback();
+                    }
+                    realConn.close();
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            //关闭空闲链接
+            for (int i = state.idleConnections.size();i > 0;i--) {
+
+                try {
+                    PooledConnection conn = state.idleConnections.remove(i - 1);
+                    conn.invalidate();
+
+                    Connection realConn = conn.getRealConnection();
+                    if (!realConn.getAutoCommit()) {
+                        realConn.rollback();
+                    }
+                } catch (SQLException e) {
+                    e.printStackTrace();
+                }
+            }
+            logger.info("PooledDataSource forcefully closed/removed all connections.");
+        }
+    }
+
+    protected boolean pingConnection(PooledConnection conn) {
+        boolean result = true;
+        try {
+            result = !conn.getRealConnection().isClosed();
+        } catch (SQLException e) {
+            logger.info("Connection " + conn.getRealHashCode() + " is BAD: " + e.getMessage());
+            result = false;
+        }
+
+        if (result) {
+            if (poolPingEnabled) {
+                if (poolPingConnectionsNotUsedFor >= 0 && conn.getTimeElapsedSinceLastUse() > poolPingConnectionsNotUsedFor) {
+                    try {
+                        logger.info("Testing connection " + conn.getRealHashCode() + " ...");
+                        Connection realConn = conn.getRealConnection();
+                        Statement statement = realConn.createStatement();
+                        ResultSet resultSet = statement.executeQuery(poolPingQuery);
+                        resultSet.close();
+                        if (!realConn.getAutoCommit()) {
+                            realConn.rollback();
+                        }
+                        result = true;
+                        logger.info("Connection " + conn.getRealHashCode() + " is GOOD!");
+                    } catch (Exception e) {
+                        logger.info("Execution of ping query '" + poolPingQuery + "' failed: " + e.getMessage());
+                        try {
+                            conn.getRealConnection().close();
+                        } catch (SQLException ignore) {
+                        }
+                        result = false;
+                        logger.info("Connection " + conn.getRealHashCode() + " is BAD: " + e.getMessage());
+                    }
+                }
+            }
+        }
+        return result;
+    }
+
+    public static Connection unwrapConnection(Connection conn) {
+        if(Proxy.isProxyClass(conn.getClass())) {
+            InvocationHandler handler = Proxy.getInvocationHandler(conn);
+            if(handler instanceof PooledConnection) {
+                return ((PooledConnection) handler).getRealConnection();
+            }
+        }
+        return conn;
+    }
+    //TODO 继续补充
+
+    private int assembleConnectionTypeCode(String url, String username, String password) {
+        return ("" + url + username + password).hashCode();
     }
 
 }
