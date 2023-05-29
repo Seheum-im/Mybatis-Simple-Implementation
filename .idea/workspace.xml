@@ -2,8 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/test/java/cn/seheum/mybatis/test/ApiTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/test/java/cn/seheum/mybatis/test/dao/IUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/test/java/cn/seheum/mybatis/test/po/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/test/resources/mapper/User_Mapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/test/resources/mybatis-config-datasource.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-5/mybatis-implement-5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-5/mybatis-implement-5.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSourceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSourceFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/Configuration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +51,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/small-mybatis-master/mybatis-step-05" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-implement-5/src/test/resources/mapper" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -57,46 +65,14 @@
       <recent name="cn.seheum.mybatis.dao" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-5\src\test\resources\mapper" />
+      <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-5\src\test\resources" />
       <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-5\src\main\java" />
       <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-4\src\test\java\cn\seheum\mybatis\test" />
       <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-4\src\test\resources\mapper" />
-      <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-4\src\test\resources" />
-      <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-4\src\main\java" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_SqlSessionFactory (1)">
-    <configuration name="ApiTest.test_MapperProxyFactory (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-implement-2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.seheum.mybatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.seheum.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="cn.seheum.mybatis.ApiTest" />
-      <option name="METHOD_NAME" value="test_MapperProxyFactory" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.test_MapperProxyFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-implement-1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.seheum.mybatis.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.seheum.mybatis" />
-      <option name="MAIN_CLASS_NAME" value="cn.seheum.mybatis.ApiTest" />
-      <option name="METHOD_NAME" value="test_MapperProxyFactory" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.ApiTest.test_pooled">
     <configuration name="ApiTest.test_SelectOne" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-implement-4" />
       <extension name="coverage">
@@ -129,6 +105,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiTest.test_SqlSessionFactory (2)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-implement-5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.seheum.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.seheum.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.seheum.mybatis.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_SqlSessionFactory" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTest.test_SqlSessionFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-implement-3" />
       <extension name="coverage">
@@ -145,13 +137,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ApiTest.test_pooled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="mybatis-implement-5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.seheum.mybatis.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="cn.seheum.mybatis.test" />
+      <option name="MAIN_CLASS_NAME" value="cn.seheum.mybatis.test.ApiTest" />
+      <option name="METHOD_NAME" value="test_pooled" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ApiTest.test_pooled" />
+        <item itemvalue="JUnit.ApiTest.test_SqlSessionFactory (2)" />
         <item itemvalue="JUnit.ApiTest.test_SqlSessionFactory (1)" />
         <item itemvalue="JUnit.ApiTest.test_SelectOne" />
         <item itemvalue="JUnit.ApiTest.test_SqlSessionFactory" />
-        <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory (1)" />
-        <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +181,7 @@
       <workItem from="1683863962834" duration="1303000" />
       <workItem from="1684141763516" duration="18542000" />
       <workItem from="1684484668539" duration="3917000" />
-      <workItem from="1684810508629" duration="33588000" />
+      <workItem from="1684810508629" duration="44672000" />
     </task>
     <task id="LOCAL-00001" summary="First新增:简单的mapperProxy，用于生成Dao接口的代理类">
       <created>1681874400388</created>
@@ -217,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685006800701</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fifth:数据库池化与非池化实现">
+      <created>1685093375476</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1685093375476</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -254,10 +269,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="690" y="271" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1684205316908" />
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1684832737748">
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1685343521668">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1684832737748" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1685343521668" />
     <state x="581" y="182" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1681805306215">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -266,10 +281,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="713" y="373" width="493" height="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1032@0.0.1920.1032" timestamp="1681872013876" />
-    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1685093359837">
+    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1685093374441">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1685093359837" />
+    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1685093374441" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1684221429734">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -282,38 +297,38 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1684810590194" />
-    <state width="1875" height="277" key="GridCell.Tab.0.bottom" timestamp="1684283962290">
+    <state width="1858" height="275" key="GridCell.Tab.0.bottom" timestamp="1685345873195">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="277" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1684283962290" />
-    <state width="1875" height="277" key="GridCell.Tab.0.center" timestamp="1684283962290">
+    <state width="1858" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1685345873195" />
+    <state width="1858" height="275" key="GridCell.Tab.0.center" timestamp="1685345873195">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="277" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1684283962290" />
-    <state width="1875" height="277" key="GridCell.Tab.0.left" timestamp="1684283962289">
+    <state width="1858" height="275" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1685345873195" />
+    <state width="1858" height="275" key="GridCell.Tab.0.left" timestamp="1685345873195">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="277" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1684283962289" />
-    <state width="1875" height="277" key="GridCell.Tab.0.right" timestamp="1684283962290">
+    <state width="1858" height="275" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1685345873195" />
+    <state width="1858" height="275" key="GridCell.Tab.0.right" timestamp="1685345873195">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="277" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1684283962290" />
-    <state width="1875" height="277" key="GridCell.Tab.1.bottom" timestamp="1684283962290">
+    <state width="1858" height="275" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1685345873195" />
+    <state width="1858" height="274" key="GridCell.Tab.1.bottom" timestamp="1685345648505">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="277" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1684283962290" />
-    <state width="1875" height="277" key="GridCell.Tab.1.center" timestamp="1684283962290">
+    <state width="1858" height="274" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1685345648505" />
+    <state width="1858" height="274" key="GridCell.Tab.1.center" timestamp="1685345648505">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="277" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1684283962290" />
-    <state width="1875" height="277" key="GridCell.Tab.1.left" timestamp="1684283962290">
+    <state width="1858" height="274" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1685345648505" />
+    <state width="1858" height="274" key="GridCell.Tab.1.left" timestamp="1685345648505">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="277" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1684283962290" />
-    <state width="1875" height="277" key="GridCell.Tab.1.right" timestamp="1684283962290">
+    <state width="1858" height="274" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1685345648505" />
+    <state width="1858" height="274" key="GridCell.Tab.1.right" timestamp="1685345648505">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="277" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1684283962290" />
+    <state width="1858" height="274" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1685345648505" />
     <state x="440" y="90" key="SettingsEditor" timestamp="1681974787725">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -322,10 +337,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="561" height="446" key="SwitcherDM/0.0.1920.1032@0.0.1920.1032" timestamp="1683772813870" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1685006805231">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1685093428411">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1685006805231" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1685093428411" />
     <state width="968" height="524" key="XDebugger.FullValuePopup" timestamp="1684218860287">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>

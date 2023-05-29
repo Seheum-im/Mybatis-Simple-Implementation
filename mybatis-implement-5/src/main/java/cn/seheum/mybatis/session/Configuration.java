@@ -2,6 +2,8 @@ package cn.seheum.mybatis.session;
 
 import cn.seheum.mybatis.binding.MapperRegistry;
 import cn.seheum.mybatis.datasource.druid.DruidDataSourceFactory;
+import cn.seheum.mybatis.datasource.pooled.PooledDataSourceFactory;
+import cn.seheum.mybatis.datasource.unpooled.UnpooledDataSourceFactory;
 import cn.seheum.mybatis.mapping.Environment;
 import cn.seheum.mybatis.mapping.MappedStatement;
 import cn.seheum.mybatis.transaction.jdbc.JdbcTransactionFactory;
@@ -36,6 +38,8 @@ public class Configuration {
     public Configuration() {
         typeAliasRegistry.registerAlias("JDBC", JdbcTransactionFactory.class);
         typeAliasRegistry.registerAlias("DRUID", DruidDataSourceFactory.class);
+        typeAliasRegistry.registerAlias("UNPOOLED", UnpooledDataSourceFactory.class);
+        typeAliasRegistry.registerAlias("POOLED", PooledDataSourceFactory.class);
     }
 
     public void addMappers(String packageName) {

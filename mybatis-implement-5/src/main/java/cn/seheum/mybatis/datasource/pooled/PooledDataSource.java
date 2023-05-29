@@ -1,16 +1,14 @@
 package cn.seheum.mybatis.datasource.pooled;
 
 import cn.seheum.mybatis.datasource.unpooled.UnpooledDataSource;
-import org.slf4j.Logger;
+import java.util.logging.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.sql.DataSource;
+import java.io.PrintWriter;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Proxy;
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 /**
  * @author seheum
@@ -18,7 +16,7 @@ import java.sql.Statement;
  */
 public class PooledDataSource implements DataSource {
 
-    private Logger logger = LoggerFactory.getLogger(PooledDataSource.class);
+    private org.slf4j.Logger logger = LoggerFactory.getLogger(PooledDataSource.class);
 
     //池状态
     private final PoolState state = new PoolState(this);
@@ -282,4 +280,144 @@ public class PooledDataSource implements DataSource {
         return ("" + url + username + password).hashCode();
     }
 
+
+    @Override
+    public Connection getConnection() throws SQLException {
+        return popConnection(dataSource.getUsername(),dataSource.getPassword()).getProxyConnection();
+    }
+
+    @Override
+    public Connection getConnection(String username, String password) throws SQLException {
+        return popConnection(username,password).getProxyConnection();
+    }
+
+    @Override
+    protected void finalize() throws Throwable {
+        forceCloseAll();
+        super.finalize();
+    }
+
+    @Override
+    public <T> T unwrap(Class<T> iface) throws SQLException {
+        throw new SQLException(getClass().getName() + " is not a wrapper.");
+    }
+
+    @Override
+    public boolean isWrapperFor(Class<?> iface) throws SQLException {
+        return false;
+    }
+
+    @Override
+    public PrintWriter getLogWriter() throws SQLException {
+        return DriverManager.getLogWriter();
+    }
+
+    @Override
+    public void setLogWriter(PrintWriter out) throws SQLException {
+        DriverManager.setLogWriter(out);
+    }
+
+    @Override
+    public void setLoginTimeout(int seconds) throws SQLException {
+        DriverManager.setLoginTimeout(seconds);
+    }
+
+    @Override
+    public int getLoginTimeout() throws SQLException {
+        return DriverManager.getLoginTimeout();
+    }
+
+    @Override
+    public Logger getParentLogger() throws SQLFeatureNotSupportedException {
+        return Logger.getLogger(java.util.logging.Logger.GLOBAL_LOGGER_NAME);
+    }
+
+    public void setDriver(String driver) {
+        dataSource.setDriver(driver);
+        forceCloseAll();
+    }
+
+    public void setUrl(String url) {
+        dataSource.setUrl(url);
+        forceCloseAll();
+    }
+
+    public void setUsername(String username) {
+        dataSource.setUsername(username);
+        forceCloseAll();
+    }
+
+    public void setPassword(String password) {
+        dataSource.setPassword(password);
+        forceCloseAll();
+    }
+
+    public void setDefaultAutoCommit(boolean defaultAutoCommit) {
+        dataSource.setAutoCommit(defaultAutoCommit);
+        forceCloseAll();
+    }
+
+    public int getPoolMaximumActiveConnections() {
+        return poolMaximumActiveConnections;
+    }
+
+    public void setPoolMaximumActiveConnections(int poolMaximumActiveConnections) {
+        this.poolMaximumActiveConnections = poolMaximumActiveConnections;
+    }
+
+    public int getPoolMaximumIdleConnections() {
+        return poolMaximumIdleConnections;
+    }
+
+    public void setPoolMaximumIdleConnections(int poolMaximumIdleConnections) {
+        this.poolMaximumIdleConnections = poolMaximumIdleConnections;
+    }
+
+    public int getPoolMaximumCheckoutTime() {
+        return poolMaximumCheckoutTime;
+    }
+
+    public void setPoolMaximumCheckoutTime(int poolMaximumCheckoutTime) {
+        this.poolMaximumCheckoutTime = poolMaximumCheckoutTime;
+    }
+
+    public int getPoolTimeToWait() {
+        return poolTimeToWait;
+    }
+
+    public void setPoolTimeToWait(int poolTimeToWait) {
+        this.poolTimeToWait = poolTimeToWait;
+    }
+
+    public String getPoolPingQuery() {
+        return poolPingQuery;
+    }
+
+    public void setPoolPingQuery(String poolPingQuery) {
+        this.poolPingQuery = poolPingQuery;
+    }
+
+    public boolean isPoolPingEnabled() {
+        return poolPingEnabled;
+    }
+
+    public void setPoolPingEnabled(boolean poolPingEnabled) {
+        this.poolPingEnabled = poolPingEnabled;
+    }
+
+    public int getPoolPingConnectionsNotUsedFor() {
+        return poolPingConnectionsNotUsedFor;
+    }
+
+    public void setPoolPingConnectionsNotUsedFor(int poolPingConnectionsNotUsedFor) {
+        this.poolPingConnectionsNotUsedFor = poolPingConnectionsNotUsedFor;
+    }
+
+    public int getExpectedConnectionTypeCode() {
+        return expectedConnectionTypeCode;
+    }
+
+    public void setExpectedConnectionTypeCode(int expectedConnectionTypeCode) {
+        this.expectedConnectionTypeCode = expectedConnectionTypeCode;
+    }
 }
