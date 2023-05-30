@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/test/java/cn/seheum/mybatis/test/ApiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/test/java/cn/seheum/mybatis/test/dao/IUserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/test/java/cn/seheum/mybatis/test/po/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/test/resources/mapper/User_Mapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-5/src/test/resources/mybatis-config-datasource.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-5/mybatis-implement-5.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-5/mybatis-implement-5.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSourceFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSourceFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledConnection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -181,7 +173,7 @@
       <workItem from="1683863962834" duration="1303000" />
       <workItem from="1684141763516" duration="18542000" />
       <workItem from="1684484668539" duration="3917000" />
-      <workItem from="1684810508629" duration="44672000" />
+      <workItem from="1684810508629" duration="56529000" />
     </task>
     <task id="LOCAL-00001" summary="First新增:简单的mapperProxy，用于生成Dao接口的代理类">
       <created>1681874400388</created>
@@ -232,7 +224,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685093375476</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fifth:数据库池化与非池化实现">
+      <created>1685345917204</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1685345917204</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,14 +280,18 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="713" y="373" width="493" height="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1032@0.0.1920.1032" timestamp="1681872013876" />
-    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1685093374441">
+    <state x="715" y="216" key="#xdebugger.evaluate" timestamp="1685435371116">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1685093374441" />
-    <state width="507" height="466" key="DebuggerActiveHint" timestamp="1684221429734">
+    <state x="715" y="216" key="#xdebugger.evaluate/0.0.1920.1032@0.0.1920.1032" timestamp="1685435371116" />
+    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1685345915825">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="507" height="466" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1684221429734" />
+    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1685345915825" />
+    <state width="507" height="466" key="DebuggerActiveHint" timestamp="1685435325741">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="507" height="466" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1685435325741" />
     <state x="197" y="85" key="DiffContextDialog" timestamp="1684484776329">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -297,38 +300,38 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1684810590194" />
-    <state width="1858" height="275" key="GridCell.Tab.0.bottom" timestamp="1685345873195">
+    <state width="1858" height="209" key="GridCell.Tab.0.bottom" timestamp="1685436195255">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1858" height="275" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1685345873195" />
-    <state width="1858" height="275" key="GridCell.Tab.0.center" timestamp="1685345873195">
+    <state width="1858" height="209" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1685436195255" />
+    <state width="1858" height="209" key="GridCell.Tab.0.center" timestamp="1685436195255">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1858" height="275" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1685345873195" />
-    <state width="1858" height="275" key="GridCell.Tab.0.left" timestamp="1685345873195">
+    <state width="1858" height="209" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1685436195255" />
+    <state width="1858" height="209" key="GridCell.Tab.0.left" timestamp="1685436195255">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1858" height="275" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1685345873195" />
-    <state width="1858" height="275" key="GridCell.Tab.0.right" timestamp="1685345873195">
+    <state width="1858" height="209" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1685436195255" />
+    <state width="1858" height="209" key="GridCell.Tab.0.right" timestamp="1685436195255">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1858" height="275" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1685345873195" />
-    <state width="1858" height="274" key="GridCell.Tab.1.bottom" timestamp="1685345648505">
+    <state width="1858" height="209" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1685436195255" />
+    <state width="1858" height="209" key="GridCell.Tab.1.bottom" timestamp="1685436195255">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1858" height="274" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1685345648505" />
-    <state width="1858" height="274" key="GridCell.Tab.1.center" timestamp="1685345648505">
+    <state width="1858" height="209" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1685436195255" />
+    <state width="1858" height="209" key="GridCell.Tab.1.center" timestamp="1685436195255">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1858" height="274" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1685345648505" />
-    <state width="1858" height="274" key="GridCell.Tab.1.left" timestamp="1685345648505">
+    <state width="1858" height="209" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1685436195255" />
+    <state width="1858" height="209" key="GridCell.Tab.1.left" timestamp="1685436195255">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1858" height="274" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1685345648505" />
-    <state width="1858" height="274" key="GridCell.Tab.1.right" timestamp="1685345648505">
+    <state width="1858" height="209" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1685436195255" />
+    <state width="1858" height="209" key="GridCell.Tab.1.right" timestamp="1685436195255">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1858" height="274" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1685345648505" />
+    <state width="1858" height="209" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1685436195255" />
     <state x="440" y="90" key="SettingsEditor" timestamp="1681974787725">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -337,14 +340,18 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="561" height="446" key="SwitcherDM/0.0.1920.1032@0.0.1920.1032" timestamp="1683772813870" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1685093428411">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1685345922011">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1685093428411" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1685345922011" />
     <state width="968" height="524" key="XDebugger.FullValuePopup" timestamp="1684218860287">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="968" height="524" key="XDebugger.FullValuePopup/0.0.1920.1032@0.0.1920.1032" timestamp="1684218860287" />
+    <state x="637" y="245" width="647" height="542" key="find.popup" timestamp="1685435616776">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="637" y="245" width="647" height="542" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1685435616776" />
     <state x="595" y="306" key="git4idea.merge.GitPullDialog" timestamp="1682236181180">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -449,6 +456,54 @@
           <url>file://$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/builder/xml/XMLConfigBuilder.java</url>
           <line>108</line>
           <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/unpooled/UnpooledDataSourceFactory.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java</url>
+          <line>53</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java</url>
+          <line>98</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java</url>
+          <line>268</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-5/src/test/java/cn/seheum/mybatis/test/ApiTest.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledConnection.java</url>
+          <line>44</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java</url>
+          <line>139</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/mybatis-implement-5/src/test/java/cn/seheum/mybatis/test/ApiTest.java</url>
+          <line>44</line>
+          <properties class="cn.seheum.mybatis.test.ApiTest" method="test_pooled">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
