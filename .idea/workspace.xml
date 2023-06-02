@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-1/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,9 +44,8 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-implement-6/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -175,8 +176,7 @@
       <workItem from="1684141763516" duration="18542000" />
       <workItem from="1684484668539" duration="3917000" />
       <workItem from="1684810508629" duration="60523000" />
-      <workItem from="1685497036314" duration="35823000" />
-      <workItem from="1685645021840" duration="41000" />
+      <workItem from="1685497036314" duration="53613000" />
     </task>
     <task id="LOCAL-00001" summary="First新增:简单的mapperProxy，用于生成Dao接口的代理类">
       <created>1681874400388</created>
@@ -248,7 +248,14 @@
       <option name="project" value="LOCAL" />
       <updated>1685588335964</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="新增：添加个人每部分的README文档，记录自己开发过程中的一些流程，用作输出">
+      <created>1685610236621</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1685610236621</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -276,7 +283,8 @@
     <MESSAGE value="fifth:数据库池化与非池化实现" />
     <MESSAGE value="fifth:数据库池化与非池化实现修改关闭链接时的代码逻辑" />
     <MESSAGE value="sixth:SQL执行器解耦合，以及模板模式设计实现执行器和语句解析器" />
-    <option name="LAST_COMMIT_MESSAGE" value="sixth:SQL执行器解耦合，以及模板模式设计实现执行器和语句解析器" />
+    <MESSAGE value="新增：添加个人每部分的README文档，记录自己开发过程中的一些流程，用作输出" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增：添加个人每部分的README文档，记录自己开发过程中的一些流程，用作输出" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="174" key="#Project_Structure" timestamp="1685525361577">
@@ -303,19 +311,18 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="715" y="216" key="#xdebugger.evaluate/0.0.1920.1032@0.0.1920.1032" timestamp="1685435371116" />
-    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1685588333805">
+    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1685689179485">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1685588333805" />
+    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1685689179485" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1685606252168">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="507" height="466" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1685606252168" />
-    <state x="263" y="115" key="DiffContextDialog" timestamp="1685722931392">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="197" y="85" key="DiffContextDialog" timestamp="1684484776329">
+      <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="197" y="85" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1684484776329" />
-    <state x="263" y="115" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1685722931392" />
     <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1685497052020">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -360,10 +367,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="561" height="446" key="SwitcherDM/0.0.1920.1032@0.0.1920.1032" timestamp="1683772813870" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1685588339213">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1685689184602">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1685588339213" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1685689184602" />
     <state width="968" height="524" key="XDebugger.FullValuePopup" timestamp="1685587843855">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -372,11 +379,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="637" y="245" width="647" height="542" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1685435616776" />
-    <state x="793" y="415" key="git4idea.merge.GitPullDialog" timestamp="1685722922268">
-      <screen x="0" y="0" width="2560" height="1400" />
+    <state x="595" y="306" key="git4idea.merge.GitPullDialog" timestamp="1685438519854">
+      <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="595" y="306" key="git4idea.merge.GitPullDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1685438519854" />
-    <state x="793" y="415" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1685722922268" />
     <state x="342" y="210" key="new project wizard" timestamp="1685438659153">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
