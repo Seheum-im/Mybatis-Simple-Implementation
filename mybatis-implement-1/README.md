@@ -8,7 +8,7 @@
 
 1.目标：为Dao层使用代理类，封装mapper操作
 
-2.设计
+2.设计:对Dao层接口采用MapperProxyFactory工厂模式生成MapperProxy，采用代理类代理Dao层接口的函数
 
 3.功能模块：  
 1）MapperProxy
