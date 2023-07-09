@@ -318,19 +318,20 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="715" y="216" key="#xdebugger.evaluate/0.0.1920.1032@0.0.1920.1032" timestamp="1685435371116" />
-    <state x="608" y="147" key="CommitChangelistDialog2" timestamp="1688884348269">
+    <state x="608" y="147" key="CommitChangelistDialog2" timestamp="1688884520588">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1685689179485" />
-    <state x="608" y="147" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1688884348269" />
+    <state x="608" y="147" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1688884520588" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1685606252168">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="507" height="466" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1685606252168" />
-    <state x="197" y="85" key="DiffContextDialog" timestamp="1684484776329">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="263" y="115" key="DiffContextDialog" timestamp="1688884519637">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="197" y="85" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1684484776329" />
+    <state x="263" y="115" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1688884519637" />
     <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1685497052020">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -376,10 +377,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="561" height="446" key="SwitcherDM/0.0.1920.1032@0.0.1920.1032" timestamp="1683772813870" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1685689184602">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="736" y="338" key="Vcs.Push.Dialog.v2" timestamp="1688884527584">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1685689184602" />
+    <state x="736" y="338" key="Vcs.Push.Dialog.v2/0.0.2560.1400@0.0.2560.1400" timestamp="1688884527584" />
     <state width="968" height="524" key="XDebugger.FullValuePopup" timestamp="1685587843855">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
