@@ -1,8 +1,24 @@
-## 解析XML文件
+## 解析XML以及注册IDAO对应的代理类
+
 
 1.目标
-- 上节主要是提供一个MapperRegistry，一个MapperProxyFactory的注册器，且每一IDao注册时都能够对应着一个MapperProxyFactory，
- 同时提供了一个包的路径扫描和读取注册，以及对SqlSession进行规范化处理。
- - 而本节主要是实现对Mapper XML文件的解析
- 
- 
+- 上节主要实现了通过读取包根据IDAO来注册MapperProxyFactory，并且通过SqlSessionFactory来获
+取SqlSession来创建代理对象，执行invoke()
+- 本节对IDAO对应的Mapper xml 文件进行解析，在调用IDAO中的方法时可以直接操作数据库
+
+2.系统设计
+- 通过SqlSessionFactoryBuilder去读取文件，生成XMLConfigBuilder，然后进行解析成对应的Configuration配置类，
+，解析的SQL保存在MappedStatement中，解析的IDAO在MapperRegistry进行生成对应的MapperProxyFactory，后续通过SqlSessionFactory传递
+Configuration生成SqlSession，通过IDAO生成对应的代理类，执行invoke()来运行MapperMethod 映射方法操作数据库
+
+3.项目新增  
+1）BaseBuilder
+- 存在Configuration实例，可以统一子类的configuration初始化以及获取configuration，
+让子类不需要额外新增一个成员变量和getter方法减少冗余
+
+
+2）SqlSessionFactoryBuilder
+- 读取xml文件，生成XMLConfigBuilder，然后进行解析，将解析好的SQL保存在MappedStatement，将IDAO对应的
+MapperProxyFactory保存在MapperRegistry中
+
+3）MappedStatement
