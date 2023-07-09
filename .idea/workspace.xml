@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-2/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-3/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-1/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-1/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,12 +43,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-implement-6/src/test/resources" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -177,6 +177,12 @@
       <workItem from="1684484668539" duration="3917000" />
       <workItem from="1684810508629" duration="60523000" />
       <workItem from="1685497036314" duration="53613000" />
+      <workItem from="1685761917956" duration="601000" />
+      <workItem from="1686129935090" duration="3737000" />
+      <workItem from="1686460986369" duration="301000" />
+      <workItem from="1686767330260" duration="2241000" />
+      <workItem from="1688287907502" duration="338000" />
+      <workItem from="1688884061432" duration="279000" />
     </task>
     <task id="LOCAL-00001" summary="First新增:简单的mapperProxy，用于生成Dao接口的代理类">
       <created>1681874400388</created>
@@ -359,10 +365,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1858" height="209" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1685606175207" />
-    <state x="440" y="90" key="SettingsEditor" timestamp="1681974787725">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="587" y="122" key="SettingsEditor" timestamp="1688884092781">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="440" y="90" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1681974787725" />
+    <state x="587" y="122" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1688884092781" />
     <state width="561" height="446" key="SwitcherDM" timestamp="1683772813870">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -379,10 +386,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="637" y="245" width="647" height="542" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1685435616776" />
-    <state x="595" y="306" key="git4idea.merge.GitPullDialog" timestamp="1685438519854">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="793" y="415" key="git4idea.merge.GitPullDialog" timestamp="1688884313923">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="595" y="306" key="git4idea.merge.GitPullDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1685438519854" />
+    <state x="793" y="415" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1688884313923" />
     <state x="342" y="210" key="new project wizard" timestamp="1685438659153">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
