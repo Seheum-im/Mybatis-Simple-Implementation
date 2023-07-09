@@ -39,6 +39,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="GO_FMT" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -317,10 +318,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="715" y="216" key="#xdebugger.evaluate/0.0.1920.1032@0.0.1920.1032" timestamp="1685435371116" />
-    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1685689179485">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="608" y="147" key="CommitChangelistDialog2" timestamp="1688884348269">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1685689179485" />
+    <state x="608" y="147" key="CommitChangelistDialog2/0.0.2560.1400@0.0.2560.1400" timestamp="1688884348269" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1685606252168">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -386,11 +388,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="637" y="245" width="647" height="542" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1685435616776" />
-    <state x="793" y="415" key="git4idea.merge.GitPullDialog" timestamp="1688884313923">
+    <state x="793" y="415" key="git4idea.merge.GitPullDialog" timestamp="1688884475135">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="595" y="306" key="git4idea.merge.GitPullDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1685438519854" />
-    <state x="793" y="415" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1688884313923" />
+    <state x="793" y="415" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1688884475135" />
     <state x="342" y="210" key="new project wizard" timestamp="1685438659153">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
