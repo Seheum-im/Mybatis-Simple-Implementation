@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/Reflector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/invoker/GetFieldInvoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/invoker/Invoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/invoker/MethodInvoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/invoker/SetFieldInvoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/property/PropertyNamer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/property/PropertyTokenizer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/Reflector.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/Reflector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +185,7 @@
       <workItem from="1685497036314" duration="62618000" />
       <workItem from="1688525238533" duration="17867000" />
       <workItem from="1688613977554" duration="9616000" />
-      <workItem from="1688694823802" duration="16864000" />
+      <workItem from="1688694823802" duration="29178000" />
     </task>
     <task id="LOCAL-00001" summary="First新增:简单的mapperProxy，用于生成Dao接口的代理类">
       <created>1681874400388</created>
@@ -303,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688722526517</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="seventh:反射填充部分实现">
+      <created>1688982481191</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1688982481191</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -336,7 +339,8 @@
     <MESSAGE value="新增：第二节新增README" />
     <MESSAGE value="新增：第三节新增README.md" />
     <MESSAGE value="seventh:反射填充对应的属性信息" />
-    <option name="LAST_COMMIT_MESSAGE" value="seventh:反射填充对应的属性信息" />
+    <MESSAGE value="seventh:反射填充部分实现" />
+    <option name="LAST_COMMIT_MESSAGE" value="seventh:反射填充部分实现" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="174" key="#Project_Structure" timestamp="1685525361577">
@@ -351,10 +355,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="779" y="548" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1685693305557" />
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1688977868778">
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser" timestamp="1689154527079">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1688977868778" />
+    <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1689154527079" />
     <state x="581" y="182" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1681805306215">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -367,10 +371,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="715" y="216" key="#xdebugger.evaluate/0.0.1920.1032@0.0.1920.1032" timestamp="1685435371116" />
-    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1688722525197">
+    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1688982480101">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1688722525197" />
+    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1688982480101" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1688718304530">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -423,10 +427,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="561" height="446" key="SwitcherDM/0.0.1920.1032@0.0.1920.1032" timestamp="1683772813870" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1688722535483">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1688982531820">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1688722535483" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1688982531820" />
     <state width="968" height="524" key="XDebugger.FullValuePopup" timestamp="1685587843855">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
