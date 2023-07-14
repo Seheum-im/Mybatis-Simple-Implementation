@@ -66,6 +66,7 @@ public class Reflector {
         }
     }
 
+
     /*
     得到某个类的反射器，该方法为静态方法，且需要缓存，又要多线程，所以REFLECTOR_MAP 选取了ConcurrentHashMap
      */
@@ -352,5 +353,34 @@ public class Reflector {
             throw new RuntimeException("There is no getter for property named '" + name + "' in '" + type + "'");
         }
         return clazz;
+    }
+
+    public Class<?> getSetterType(String name) {
+        Class<?> clazz = setTypes.get(name);
+        if (clazz == null) {
+            throw new RuntimeException("There is no setter for property named '" + name + "' in '" + type + "'");
+        }
+        return clazz;
+    }
+
+    public String findPropertyName(String name) {
+        return caseInsensitivePropertyMap.get(name.toUpperCase(Locale.ENGLISH));
+    }
+
+    public String[] getGetablePropertyNames() {
+        return readablePropertyNames;
+    }
+
+    public String[] getSetablePropertyNames() {
+        return writeablePropertyNames;
+    }
+
+
+    public Invoker getGetInvoker(String name) {
+        Invoker method = getMethods.get(name);
+        if (method == null) {
+            throw new RuntimeException("There is no getter for property named '" + name + "' in '" + type + "'");
+        }
+        return method;
     }
 }
