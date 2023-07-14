@@ -2,53 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/mybatis-implement-7.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/binding/MapperMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/binding/MapperProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/binding/MapperProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/binding/MapperRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/builder/BaseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/builder/xml/XMLConfigBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/datasource/DataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/datasource/druid/DruidDataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/datasource/pooled/PoolState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/datasource/unpooled/UnpooledDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/datasource/unpooled/UnpooledDataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/executor/BaseExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/executor/Executor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/executor/SimpleExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/executor/resultset/DefaultResultSetHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/executor/resultset/ResultSetHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/executor/statement/BaseStatementHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/executor/statement/PreparedStatementHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/executor/statement/SimpleStatementHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/executor/statement/StatementHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/io/Resources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/mapping/BoundSql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/mapping/Environment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/mapping/MappedStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/mapping/SqlCommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/session/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/session/ResultHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/session/SqlSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/session/SqlSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/session/SqlSessionFactoryBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/session/TransactionIsolationLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/transaction/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/transaction/TransactionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/transaction/jdbc/JdbcTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/transaction/jdbc/JdbcTransactionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/type/TypeAliasRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,6 +42,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-implement-7/src/main/java" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -461,10 +416,11 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="637" y="245" width="647" height="542" key="find.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1685435616776" />
-    <state x="595" y="306" key="git4idea.merge.GitPullDialog" timestamp="1688550313837">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="793" y="415" key="git4idea.merge.GitPullDialog" timestamp="1689366907200">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="595" y="306" key="git4idea.merge.GitPullDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1688550313837" />
+    <state x="793" y="415" key="git4idea.merge.GitPullDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1689366907200" />
     <state x="342" y="210" key="new project wizard" timestamp="1688720828602">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
