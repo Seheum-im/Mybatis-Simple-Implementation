@@ -2,9 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaObject.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/factory/ObjectFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/BaseWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/ObjectWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/ObjectWrapperFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/Reflector.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/Reflector.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +26,7 @@
         <option value="Class" />
       </list>
     </option>
+    <option name="SCHEME" value="Project" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
@@ -49,12 +53,13 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -185,6 +190,10 @@
       <workItem from="1688525238533" duration="17867000" />
       <workItem from="1688613977554" duration="9616000" />
       <workItem from="1688694823802" duration="44038000" />
+      <workItem from="1689368377697" duration="2128000" />
+      <workItem from="1690612864323" duration="1425000" />
+      <workItem from="1690638955519" duration="1869000" />
+      <workItem from="1690831864913" duration="614000" />
     </task>
     <task id="LOCAL-00001" summary="First新增:简单的mapperProxy，用于生成Dao接口的代理类">
       <created>1681874400388</created>
@@ -366,14 +375,6 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="765" y="225" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1689154527079" />
-    <state x="581" y="182" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1681805306215">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="581" y="182" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1681805306215" />
-    <state x="713" y="373" width="493" height="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1681872013876">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="713" y="373" width="493" height="296" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1032@0.0.1920.1032" timestamp="1681872013876" />
     <state x="715" y="216" key="#xdebugger.evaluate" timestamp="1685435371116">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -386,14 +387,16 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="507" height="466" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1688718304530" />
-    <state x="197" y="85" key="DiffContextDialog" timestamp="1688722496821">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="263" y="115" key="DiffContextDialog" timestamp="1690612898379">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="197" y="85" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1688722496821" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1688720595104">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="263" y="115" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1690612898379" />
+    <state x="987" y="368" key="FileChooserDialogImpl" timestamp="1690639545731">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1688720595104" />
+    <state x="987" y="368" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1690639545731" />
     <state width="1875" height="233" key="GridCell.Tab.0.bottom" timestamp="1689305809796">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -426,10 +429,15 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="1875" height="233" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1689305809796" />
-    <state x="440" y="90" key="SettingsEditor" timestamp="1688614525180">
-      <screen x="0" y="0" width="1920" height="1032" />
+    <state x="927" y="410" key="RollbackChangesDialog" timestamp="1690612899397">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="927" y="410" key="RollbackChangesDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1690612899397" />
+    <state x="587" y="122" key="SettingsEditor" timestamp="1689368436689">
+      <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="440" y="90" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1688614525180" />
+    <state x="587" y="122" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1689368436689" />
     <state width="561" height="446" key="SwitcherDM" timestamp="1683772813870">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
