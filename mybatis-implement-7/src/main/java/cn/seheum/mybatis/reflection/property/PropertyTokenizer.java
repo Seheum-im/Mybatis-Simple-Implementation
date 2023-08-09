@@ -21,7 +21,7 @@ public class PropertyTokenizer implements Iterable<PropertyTokenizer>, Iterator<
 
 
     public PropertyTokenizer(String fullName) {
-        //找到输入例子中的第一个 "."，因为数据库中的数据以字符串的形式带 "."的形式输入
+        // 找到输入例子中的第一个 "."，因为数据库中的数据以字符串的形式带 "."的形式输入
         int pointIdx = fullName.indexOf('.');
         if (pointIdx > -1) {
             name = fullName.substring(0,pointIdx);
@@ -32,7 +32,7 @@ public class PropertyTokenizer implements Iterable<PropertyTokenizer>, Iterator<
         }
         indexedName = name;
 
-        //查找中括号，解析中括号内的数字
+        // 查找中括号，解析中括号内的数字
         pointIdx = name.indexOf('[');
         if (pointIdx > -1) {
             index = name.substring(pointIdx + 1, name.length() - 1);

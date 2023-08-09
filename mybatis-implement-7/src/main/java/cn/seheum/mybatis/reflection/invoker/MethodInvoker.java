@@ -16,9 +16,9 @@ public class MethodInvoker implements Invoker {
         this.method = method;
 
         // 若只有一个参数，则返回参数类型，否则返回return类型
-        if(method.getParameterTypes().length == 1) {
+        if (method.getParameterTypes().length == 1) {
             type = method.getParameterTypes()[0];
-        }else {
+        } else {
             type = method.getReturnType();
         }
     }
