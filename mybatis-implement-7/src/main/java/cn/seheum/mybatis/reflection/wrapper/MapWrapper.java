@@ -21,19 +21,31 @@ public class MapWrapper extends BaseWrapper {
         this.map = map;
     }
 
+    // get,set是允许的，
     @Override
     public Object get(PropertyTokenizer prop) {
-        return null;
+        //如果有index,说明是集合，那就要分解集合,调用的是BaseWrapper.resolveCollection 和 getCollectionValue
+        if (prop.getIndex() != null) {
+            Object collection = resolveCollection(prop, map);
+            return getCollectionValue(prop, collection);
+        } else {
+            return map.get(prop.getName());
+        }
     }
 
     @Override
     public void set(PropertyTokenizer prop, Object value) {
-
+        if (prop.getIndex() != null) {
+            Object collection = resolveCollection(prop, map);
+            setCollectionValue(prop, collection, value);
+        } else {
+            map.put(prop.getName(), value);
+        }
     }
 
     @Override
     public String findProperty(String name, boolean useCamelCaseMapping) {
-        return null;
+        return name;
     }
 
     @Override

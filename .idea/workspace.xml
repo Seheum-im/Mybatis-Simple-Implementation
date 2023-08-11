@@ -2,17 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/SystemMetaObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/factory/DefaultObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/BeanWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/CollectionWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/DefaultObjectWrapperFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/MapWrapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/invoker/MethodInvoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/invoker/MethodInvoker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/property/PropertyTokenizer.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/property/PropertyTokenizer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/BaseWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/BaseWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/Reflector.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/Reflector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/BeanWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/BeanWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/CollectionWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/CollectionWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/MapWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/MapWrapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +70,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="D:/SpringStudy/Spring-simple-implementation" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/small-mybatis-master/mybatis-step-07" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -213,6 +209,8 @@
       <workItem from="1690612864323" duration="1425000" />
       <workItem from="1690638955519" duration="1869000" />
       <workItem from="1690831864913" duration="614000" />
+      <workItem from="1691628149004" duration="93000" />
+      <workItem from="1691654523404" duration="15211000" />
     </task>
     <task id="LOCAL-00001" summary="First新增:简单的mapperProxy，用于生成Dao接口的代理类">
       <created>1681874400388</created>
@@ -340,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689154995785</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="seventh:新增一些属性解析内容">
+      <created>1691569476793</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1691569476793</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,7 +380,8 @@
     <MESSAGE value="seventh:反射填充对应的属性信息" />
     <MESSAGE value="seventh:反射填充部分实现" />
     <MESSAGE value="seventh:新增MetaClass以及一些属性解析内容" />
-    <option name="LAST_COMMIT_MESSAGE" value="seventh:新增MetaClass以及一些属性解析内容" />
+    <MESSAGE value="seventh:新增一些属性解析内容" />
+    <option name="LAST_COMMIT_MESSAGE" value="seventh:新增一些属性解析内容" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="174" key="#Project_Structure" timestamp="1685525361577">
@@ -398,10 +404,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="715" y="216" key="#xdebugger.evaluate/0.0.1920.1032@0.0.1920.1032" timestamp="1691464076435" />
-    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1689154994701">
+    <state x="456" y="108" key="CommitChangelistDialog2" timestamp="1691569474876">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1689154994701" />
+    <state x="456" y="108" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1691569474876" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1691474978049">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -411,10 +417,10 @@
     </state>
     <state x="197" y="85" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1688722496821" />
     <state x="263" y="115" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1690612898379" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1691466346704">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1691654542946">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1691466346704" />
+    <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1691654542946" />
     <state x="987" y="368" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1690639545731" />
     <state width="1875" height="233" key="GridCell.Tab.0.bottom" timestamp="1691475216186">
       <screen x="0" y="0" width="1920" height="1032" />
@@ -461,10 +467,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="561" height="446" key="SwitcherDM/0.0.1920.1032@0.0.1920.1032" timestamp="1683772813870" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1689154998799">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1691569478636">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1689154998799" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1691569478636" />
     <state width="968" height="524" key="XDebugger.FullValuePopup" timestamp="1685587843855">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>

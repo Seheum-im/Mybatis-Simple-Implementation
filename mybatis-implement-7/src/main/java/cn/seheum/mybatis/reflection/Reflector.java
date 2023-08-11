@@ -383,4 +383,20 @@ public class Reflector {
         }
         return method;
     }
+
+    public Invoker getSetInvoker(String propertyName) {
+        Invoker method = setMethods.get(propertyName);
+        if (method == null) {
+            throw new RuntimeException("There is no setter for property named '" + propertyName + "' in '" + type + "'");
+        }
+        return method;
+    }
+
+    public boolean hasSetter(String  propertyName) {
+        return setMethods.keySet().contains(propertyName);
+    }
+
+    public boolean hasGetter(String propertyName) {
+        return getMethods.keySet().contains(propertyName);
+    }
 }

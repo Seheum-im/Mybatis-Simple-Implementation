@@ -150,4 +150,40 @@ public class MetaClass {
         }
         return stringBuilder;
     }
+
+    public Invoker getGetInvoker(String name) {
+        return reflector.getGetInvoker(name);
+    }
+
+    public Invoker getSetInvoker(String name) {
+        return reflector.getSetInvoker(name);
+    }
+
+    public boolean hasSetter(String name) {
+        PropertyTokenizer prop = new PropertyTokenizer(name);
+        if (prop.hasNext()) {
+            if (reflector.hasSetter(prop.getName())) {
+                MetaClass metaProp = metaClassForProperty(prop.getName());
+                return metaProp.hasSetter(prop.getChildren());
+            } else {
+                return false;
+            }
+        } else {
+            return reflector.hasSetter(prop.getName());
+        }
+    }
+
+    public boolean hasGetter(String name) {
+        PropertyTokenizer prop = new PropertyTokenizer(name);
+        if (prop.hasNext()) {
+            if (reflector.hasGetter(prop.getName())) {
+                MetaClass metaProp = metaClassForProperty(prop);
+                return metaProp.hasGetter(prop.getChildren());
+            } else {
+                return false;
+            }
+        } else {
+            return reflector.hasGetter(prop.getName());
+        }
+    }
 }
