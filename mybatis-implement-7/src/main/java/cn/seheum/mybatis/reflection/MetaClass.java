@@ -186,4 +186,8 @@ public class MetaClass {
             return reflector.hasGetter(prop.getName());
         }
     }
+
+    public boolean hasDefaultConstructor() {
+        return reflector.hasDefaultConstructor();
+    }
 }

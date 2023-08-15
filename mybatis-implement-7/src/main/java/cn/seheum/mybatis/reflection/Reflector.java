@@ -46,9 +46,11 @@ public class Reflector {
     public Reflector(Class<?> clazz) {
         this.type = clazz;
 
-        //todo 这部分的逻辑实现为什么这样我暂时还没明白，需要完成后debug进行追踪
         // 加入构造函数
         addDefaultConstructor(clazz);
+
+        //TODO 这两个getter和setter是有缺陷的，后续需要优化：getter和setter这两个方法没有将含多个参数传入的函数进行处理
+
         // 加入getter
         addGetMethods(clazz);
         // 加入Setter
@@ -192,7 +194,10 @@ public class Reflector {
 
     private void addGetMethods(Class<?> clazz) {
         Map<String, List<Method>> conflictingGetters = new HashMap<>();
+
+        //获取该类下的所有方法
         Method[] methods = getClassMethods(clazz);
+
         for (Method method : methods) {
             String name = method.getName();
             if (name.startsWith("get") && name.length() > 3) {
@@ -207,6 +212,7 @@ public class Reflector {
                 }
             }
         }
+        //处理getter冲突
         resolveGetterConflicts(conflictingGetters);
     }
 
@@ -238,6 +244,7 @@ public class Reflector {
                                 + ".  This breaks the JavaBeans " + "specification and can cause unpredicatble results.");
                     }
                 }
+                //将getter方法加入到对应的hash列表中
                 addGetMethod(propName,getter);
             }
         }
@@ -280,7 +287,7 @@ public class Reflector {
     private void addUniqueMethods(Map<String, Method> uniqueMethods, Method[] methods) {
         for (Method currentMethod : methods) {
             if (!currentMethod.isBridge()) {
-                //获得签名
+                // 获得方法签名
                 String signature = getSignature(currentMethod);
 
                 if (!uniqueMethods.containsKey(signature)) {
@@ -291,6 +298,7 @@ public class Reflector {
 
                         }
                     }
+                    //将方法签名和方法加入hash表里
                     uniqueMethods.put(signature,currentMethod);
                 }
             }
@@ -300,8 +308,10 @@ public class Reflector {
 
     private String getSignature(Method method) {
         StringBuilder sb = new StringBuilder();
+        // 获取方法返回类型
         Class<?> returnType = method.getReturnType();
         if (returnType != null) {
+            // 拼接成: 方法的返回类型#方法名:方法参数类型,.....
             sb.append(returnType.getName()).append('#');
         }
         sb.append(method.getName());
@@ -398,5 +408,17 @@ public class Reflector {
 
     public boolean hasGetter(String propertyName) {
         return getMethods.keySet().contains(propertyName);
+    }
+
+    public boolean hasDefaultConstructor() {
+        return defaultConstructor != null;
+    }
+
+    public Constructor<?> getDefaultConstructor() {
+        if (defaultConstructor != null) {
+            return defaultConstructor;
+        } else {
+            throw new RuntimeException("There is no default constructor for " + type);
+        }
     }
 }
