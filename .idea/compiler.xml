@@ -14,6 +14,7 @@
         <module name="mybatis-implement-3" />
         <module name="mybatis-implement-2" />
         <module name="mybatis-implement-1" />
+        <module name="mybatis-implement-8" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -24,6 +25,7 @@
       <module name="mybatis-implement-5" target="1.8" />
       <module name="mybatis-implement-6" target="1.8" />
       <module name="mybatis-implement-7" target="1.8" />
+      <module name="mybatis-implement-8" target="1.8" />
       <module name="Mybatis-Simple-Implementation" target="1.8" />
     </bytecodeTargetLevel>
   </component>
