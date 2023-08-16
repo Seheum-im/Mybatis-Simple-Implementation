@@ -18,9 +18,14 @@ public abstract class BaseBuilder {
     public BaseBuilder(Configuration configuration) {
         this.configuration = configuration;
         this.typeAliasRegistry = this.configuration.getTypeAliasRegistry();
+        this.typeHandlerRegistry = this.configuration.getTypeHandlerRegistry();
     }
 
     public Configuration getConfiguration() {
         return configuration;
+    }
+
+    protected Class<?> resolveAlias(String alias) {
+        return typeAliasRegistry.resolveAlias(alias);
     }
 }

@@ -2,77 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/fileTemplates/includes/File Header.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/mybatis-implement-8.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/binding/MapperMethod.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/binding/MapperProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/binding/MapperProxyFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/binding/MapperRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/builder/BaseBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/builder/xml/XMLConfigBuilder.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/builder/xml/XMLMapperBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/datasource/DataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/datasource/druid/DruidDataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/datasource/pooled/PoolState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledConnection.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/datasource/unpooled/UnpooledDataSource.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/datasource/unpooled/UnpooledDataSourceFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/executor/BaseExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/executor/Executor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/executor/SimpleExecutor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/executor/resultset/DefaultResultSetHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/executor/resultset/ResultSetHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/executor/statement/BaseStatementHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/executor/statement/PreparedStatementHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/executor/statement/SimpleStatementHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/executor/statement/StatementHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/io/Resources.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/mapping/BoundSql.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/mapping/Environment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/mapping/MappedStatement.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/mapping/SqlCommandType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/MetaClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/MetaObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/Reflector.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/SystemMetaObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/factory/DefaultObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/factory/ObjectFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/invoker/GetFieldInvoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/invoker/Invoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/invoker/MethodInvoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/invoker/SetFieldInvoker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/property/PropertyNamer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/property/PropertyTokenizer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/wrapper/BaseWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/wrapper/BeanWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/wrapper/CollectionWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/wrapper/DefaultObjectWrapperFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/wrapper/MapWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/wrapper/ObjectWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/reflection/wrapper/ObjectWrapperFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/Configuration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/ResultHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/SqlSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/SqlSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/SqlSessionFactoryBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/TransactionIsolationLevel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSessionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/transaction/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/transaction/TransactionFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/transaction/jdbc/JdbcTransaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/transaction/jdbc/JdbcTransactionFactory.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/type/JdbcType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/type/TypeAliasRegistry.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/type/TypeHandler.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/type/TypeHandlerRegistry.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/builder/BaseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/builder/BaseBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/Configuration.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +93,20 @@
       <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-6\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ApiTest.test_SqlSessionFactory (2)">
+  <component name="RunManager" selected="Application.XMLConfigBuilder">
+    <configuration name="XMLConfigBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="cn.seheum.mybatis.builder.xml.XMLConfigBuilder" />
+      <module name="mybatis-implement-8" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="cn.seheum.mybatis.builder.xml.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiTest.test_MapperProxyFactory (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="mybatis-implement-2" />
       <extension name="coverage">
@@ -169,22 +118,6 @@
       <option name="PACKAGE_NAME" value="cn.seheum.mybatis" />
       <option name="MAIN_CLASS_NAME" value="cn.seheum.mybatis.ApiTest" />
       <option name="METHOD_NAME" value="test_MapperProxyFactory" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ApiTest.test_SqlSessionFactory (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="mybatis-implement-4" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="cn.seheum.mybatis.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="cn.seheum.mybatis.test" />
-      <option name="MAIN_CLASS_NAME" value="cn.seheum.mybatis.test.ApiTest" />
-      <option name="METHOD_NAME" value="test_SqlSessionFactory" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -240,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.XMLConfigBuilder" />
         <item itemvalue="JUnit.ApiTest.test_SqlSessionFactory (2)" />
         <item itemvalue="JUnit.ReflectionTest.test_reflection" />
         <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory (1)" />
         <item itemvalue="JUnit.ApiTest.test_SqlSessionFactory (3)" />
-        <item itemvalue="JUnit.ApiTest.test_SqlSessionFactory (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -277,7 +210,7 @@
       <workItem from="1690831864913" duration="614000" />
       <workItem from="1691628149004" duration="93000" />
       <workItem from="1691654523404" duration="15833000" />
-      <workItem from="1691973684415" duration="28056000" />
+      <workItem from="1691973684415" duration="32573000" />
     </task>
     <task id="LOCAL-00001" summary="First新增:简单的mapperProxy，用于生成Dao接口的代理类">
       <created>1681874400388</created>
@@ -426,7 +359,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692070180837</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="eighth:xml解析通过细分为各个功能模块">
+      <created>1692156998328</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1692156998328</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -463,7 +403,8 @@
     <MESSAGE value="seventh:新增MetaClass以及一些属性解析内容" />
     <MESSAGE value="seventh:新增一些属性解析内容" />
     <MESSAGE value="seventh:通过反射来解析DataSource,以及对xml解析匹配，通过代理对象为该key赋值value" />
-    <option name="LAST_COMMIT_MESSAGE" value="seventh:通过反射来解析DataSource,以及对xml解析匹配，通过代理对象为该key赋值value" />
+    <MESSAGE value="eighth:xml解析通过细分为各个功能模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="eighth:xml解析通过细分为各个功能模块" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="174" key="#Project_Structure" timestamp="1685525361577">
@@ -490,10 +431,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="715" y="216" key="#xdebugger.evaluate/0.0.1920.1032@0.0.1920.1032" timestamp="1691464076435" />
-    <state x="579" y="173" key="CommitChangelistDialog2" timestamp="1692070179255">
+    <state x="579" y="173" key="CommitChangelistDialog2" timestamp="1692156996131">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="579" y="173" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1692070179255" />
+    <state x="579" y="173" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1692156996131" />
     <state width="507" height="466" key="DebuggerActiveHint" timestamp="1691474978049">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -508,22 +449,22 @@
     </state>
     <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1691654542946" />
     <state x="987" y="368" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1690639545731" />
-    <state width="1875" height="243" key="GridCell.Tab.0.bottom" timestamp="1692152571340">
+    <state width="1875" height="243" key="GridCell.Tab.0.bottom" timestamp="1692174738619">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1692152571340" />
-    <state width="1875" height="243" key="GridCell.Tab.0.center" timestamp="1692152571337">
+    <state width="1875" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1692174738619" />
+    <state width="1875" height="243" key="GridCell.Tab.0.center" timestamp="1692174738619">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="243" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1692152571337" />
-    <state width="1875" height="243" key="GridCell.Tab.0.left" timestamp="1692152571335">
+    <state width="1875" height="243" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1692174738619" />
+    <state width="1875" height="243" key="GridCell.Tab.0.left" timestamp="1692174738618">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="243" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1692152571335" />
-    <state width="1875" height="243" key="GridCell.Tab.0.right" timestamp="1692152571339">
+    <state width="1875" height="243" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1692174738618" />
+    <state width="1875" height="243" key="GridCell.Tab.0.right" timestamp="1692174738619">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="243" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1692152571339" />
+    <state width="1875" height="243" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1692174738619" />
     <state width="1875" height="425" key="GridCell.Tab.1.bottom" timestamp="1692069301662">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -558,10 +499,10 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="561" height="446" key="SwitcherDM/0.0.1920.1032@0.0.1920.1032" timestamp="1683772813870" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1692070242392">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1692157005414">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1692070242392" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1692157005414" />
     <state width="968" height="524" key="XDebugger.FullValuePopup" timestamp="1685587843855">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>

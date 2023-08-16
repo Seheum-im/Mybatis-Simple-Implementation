@@ -16,6 +16,7 @@ import cn.seheum.mybatis.mapping.MappedStatement;
 import cn.seheum.mybatis.transaction.Transaction;
 import cn.seheum.mybatis.transaction.jdbc.JdbcTransactionFactory;
 import cn.seheum.mybatis.type.TypeAliasRegistry;
+import cn.seheum.mybatis.type.TypeHandlerRegistry;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -32,7 +33,8 @@ public class Configuration {
     //类型别名注册机
     protected final TypeAliasRegistry typeAliasRegistry = new TypeAliasRegistry();
 
-
+    //类型处理器注册机
+    protected final TypeHandlerRegistry typeHandlerRegistry = new TypeHandlerRegistry();
     /**
      * 映射注册机
      */
@@ -104,4 +106,10 @@ public class Configuration {
     public Executor newExecutor(Transaction tx) {
         return new SimpleExecutor(this,tx);
     }
+
+    // 类型处理器注册机
+    public TypeHandlerRegistry getTypeHandlerRegistry() {
+        return typeHandlerRegistry;
+    }
+
 }
