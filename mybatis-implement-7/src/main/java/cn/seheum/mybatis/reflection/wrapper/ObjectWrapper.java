@@ -9,6 +9,7 @@ import java.util.List;
 /**
  * @author seheum
  * @date 2023/7/14 12:52
+ * 定义了获取属性和设置属性的接口
  **/
 public interface ObjectWrapper {
 

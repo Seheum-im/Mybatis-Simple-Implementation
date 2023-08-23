@@ -2,13 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="498c0bb8-4eba-46a9-b6a1-77719e79fb7a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/builder/xml/XMLMapperBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/type/JdbcType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/type/TypeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/type/TypeHandlerRegistry.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/builder/BaseBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/builder/BaseBuilder.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-8/src/main/java/cn/seheum/mybatis/session/Configuration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/Reflector.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/Reflector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/invoker/Invoker.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/invoker/Invoker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/ObjectWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/ObjectWrapper.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/mybatis-implement-8/src/main/java" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/small-mybatis-master/mybatis-step-07" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -93,7 +91,7 @@
       <recent name="D:\MybatisStudy\Mybatis-Simple-Implementation\mybatis-implement-6\src\test\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.XMLConfigBuilder">
+  <component name="RunManager" selected="JUnit.ApiTest.test_SqlSessionFactory (2)">
     <configuration name="XMLConfigBuilder" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="cn.seheum.mybatis.builder.xml.XMLConfigBuilder" />
       <module name="mybatis-implement-8" />
@@ -173,8 +171,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.XMLConfigBuilder" />
         <item itemvalue="JUnit.ApiTest.test_SqlSessionFactory (2)" />
+        <item itemvalue="Application.XMLConfigBuilder" />
         <item itemvalue="JUnit.ReflectionTest.test_reflection" />
         <item itemvalue="JUnit.ApiTest.test_MapperProxyFactory (1)" />
         <item itemvalue="JUnit.ApiTest.test_SqlSessionFactory (3)" />
@@ -210,7 +208,9 @@
       <workItem from="1690831864913" duration="614000" />
       <workItem from="1691628149004" duration="93000" />
       <workItem from="1691654523404" duration="15833000" />
-      <workItem from="1691973684415" duration="32573000" />
+      <workItem from="1691973684415" duration="35432000" />
+      <workItem from="1692674612808" duration="4178000" />
+      <workItem from="1692761497758" duration="11117000" />
     </task>
     <task id="LOCAL-00001" summary="First新增:简单的mapperProxy，用于生成Dao接口的代理类">
       <created>1681874400388</created>
@@ -366,7 +366,14 @@
       <option name="project" value="LOCAL" />
       <updated>1692156998328</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="eighth:xml解析通过细分为各个功能模块">
+      <created>1692178378615</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1692178378615</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -431,56 +438,56 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="715" y="216" key="#xdebugger.evaluate/0.0.1920.1032@0.0.1920.1032" timestamp="1691464076435" />
-    <state x="579" y="173" key="CommitChangelistDialog2" timestamp="1692156996131">
+    <state x="579" y="173" key="CommitChangelistDialog2" timestamp="1692178377281">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="579" y="173" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1692156996131" />
-    <state width="507" height="466" key="DebuggerActiveHint" timestamp="1691474978049">
+    <state x="579" y="173" key="CommitChangelistDialog2/0.0.1920.1032@0.0.1920.1032" timestamp="1692178377281" />
+    <state width="507" height="466" key="DebuggerActiveHint" timestamp="1692762586921">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="507" height="466" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1691474978049" />
+    <state width="507" height="466" key="DebuggerActiveHint/0.0.1920.1032@0.0.1920.1032" timestamp="1692762586921" />
     <state x="197" y="85" width="1536" height="853" key="DiffContextDialog" timestamp="1691983266847">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="197" y="85" width="1536" height="853" key="DiffContextDialog/0.0.1920.1032@0.0.1920.1032" timestamp="1691983266847" />
     <state x="263" y="115" key="DiffContextDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1690612898379" />
-    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1691654542946">
+    <state x="740" y="271" key="FileChooserDialogImpl" timestamp="1692774128959">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1691654542946" />
+    <state x="740" y="271" key="FileChooserDialogImpl/0.0.1920.1032@0.0.1920.1032" timestamp="1692774128959" />
     <state x="987" y="368" key="FileChooserDialogImpl/0.0.2560.1400@0.0.2560.1400" timestamp="1690639545731" />
-    <state width="1875" height="243" key="GridCell.Tab.0.bottom" timestamp="1692174738619">
+    <state width="1875" height="310" key="GridCell.Tab.0.bottom" timestamp="1692782484899">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="243" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1692174738619" />
-    <state width="1875" height="243" key="GridCell.Tab.0.center" timestamp="1692174738619">
+    <state width="1875" height="310" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1692782484899" />
+    <state width="1875" height="310" key="GridCell.Tab.0.center" timestamp="1692782484898">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="243" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1692174738619" />
-    <state width="1875" height="243" key="GridCell.Tab.0.left" timestamp="1692174738618">
+    <state width="1875" height="310" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1692782484898" />
+    <state width="1875" height="310" key="GridCell.Tab.0.left" timestamp="1692782484898">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="243" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1692174738618" />
-    <state width="1875" height="243" key="GridCell.Tab.0.right" timestamp="1692174738619">
+    <state width="1875" height="310" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1692782484898" />
+    <state width="1875" height="310" key="GridCell.Tab.0.right" timestamp="1692782484899">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="243" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1692174738619" />
-    <state width="1875" height="425" key="GridCell.Tab.1.bottom" timestamp="1692069301662">
+    <state width="1875" height="310" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1692782484899" />
+    <state width="1875" height="310" key="GridCell.Tab.1.bottom" timestamp="1692782484899">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="425" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1692069301662" />
-    <state width="1875" height="425" key="GridCell.Tab.1.center" timestamp="1692069301662">
+    <state width="1875" height="310" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1692782484899" />
+    <state width="1875" height="310" key="GridCell.Tab.1.center" timestamp="1692782484899">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="425" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1692069301662" />
-    <state width="1875" height="425" key="GridCell.Tab.1.left" timestamp="1692069301662">
+    <state width="1875" height="310" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1692782484899" />
+    <state width="1875" height="310" key="GridCell.Tab.1.left" timestamp="1692782484899">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="425" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1692069301662" />
-    <state width="1875" height="425" key="GridCell.Tab.1.right" timestamp="1692069301662">
+    <state width="1875" height="310" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1692782484899" />
+    <state width="1875" height="310" key="GridCell.Tab.1.right" timestamp="1692782484899">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="1875" height="425" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1692069301662" />
+    <state width="1875" height="310" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1692782484899" />
     <state x="695" y="302" key="RollbackChangesDialog" timestamp="1691983230813">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -495,22 +502,18 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="681" y="257" width="570" height="524" key="StructurePopup/0.0.1920.1032@0.0.1920.1032" timestamp="1691999995592" />
-    <state width="561" height="446" key="SwitcherDM" timestamp="1683772813870">
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1692179204725">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state width="561" height="446" key="SwitcherDM/0.0.1920.1032@0.0.1920.1032" timestamp="1683772813870" />
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2" timestamp="1692157005414">
-      <screen x="0" y="0" width="1920" height="1032" />
-    </state>
-    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1692157005414" />
+    <state x="552" y="249" key="Vcs.Push.Dialog.v2/0.0.1920.1032@0.0.1920.1032" timestamp="1692179204725" />
     <state width="968" height="524" key="XDebugger.FullValuePopup" timestamp="1685587843855">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state width="968" height="524" key="XDebugger.FullValuePopup/0.0.1920.1032@0.0.1920.1032" timestamp="1685587843855" />
-    <state x="466" y="252" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1691462858047">
+    <state x="466" y="252" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1692762399857">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="466" y="252" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1032@0.0.1920.1032" timestamp="1691462858047" />
+    <state x="466" y="252" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1032@0.0.1920.1032" timestamp="1692762399857" />
     <state x="637" y="245" width="647" height="542" key="find.popup" timestamp="1685435616776">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
@@ -523,233 +526,243 @@
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
     <state x="342" y="210" key="new project wizard/0.0.1920.1032@0.0.1920.1032" timestamp="1692086696132" />
-    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1689300768706">
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup" timestamp="1692783177855">
       <screen x="0" y="0" width="1920" height="1032" />
     </state>
-    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1689300768706" />
+    <state x="623" y="223" width="672" height="678" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1692783177855" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-1/src/main/java/cn/seheum/mybatis/binding/MapperProxy.java</url>
           <line>24</line>
           <option name="timeStamp" value="2" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-1/src/main/java/cn/seheum/mybatis/binding/MapperProxy.java</url>
           <line>27</line>
           <option name="timeStamp" value="3" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-1/src/main/java/cn/seheum/mybatis/binding/MapperProxyFactory.java</url>
           <line>18</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-1/src/test/java/cn/seheum/mybatis/ApiTest.java</url>
           <line>21</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-3/src/test/java/cn/seheum/mybatis/test/ApiTest.java</url>
           <line>25</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java</url>
           <line>26</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperMethod.java</url>
           <line>24</line>
           <option name="timeStamp" value="12" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperMethod.java</url>
           <line>48</line>
           <option name="timeStamp" value="14" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperProxy.java</url>
           <line>28</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/binding/MapperRegistry.java</url>
           <line>29</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-2/src/test/java/cn/seheum/mybatis/ApiTest.java</url>
           <line>24</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-3/src/main/java/cn/seheum/mybatis/mapping/MappedStatement.java</url>
           <line>30</line>
           <option name="timeStamp" value="19" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java</url>
           <line>33</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java</url>
           <line>52</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-4/src/test/java/cn/seheum/mybatis/test/ApiTest.java</url>
           <line>30</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/builder/xml/XMLConfigBuilder.java</url>
           <line>77</line>
           <option name="timeStamp" value="27" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-4/src/main/java/cn/seheum/mybatis/builder/xml/XMLConfigBuilder.java</url>
           <line>108</line>
           <option name="timeStamp" value="28" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/unpooled/UnpooledDataSourceFactory.java</url>
           <line>22</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java</url>
           <line>53</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java</url>
           <line>98</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java</url>
           <line>268</line>
           <option name="timeStamp" value="39" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java</url>
           <line>33</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-5/src/test/java/cn/seheum/mybatis/test/ApiTest.java</url>
           <line>55</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledConnection.java</url>
           <line>44</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-5/src/main/java/cn/seheum/mybatis/datasource/pooled/PooledDataSource.java</url>
           <line>139</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-6/src/main/java/cn/seheum/mybatis/executor/BaseExecutor.java</url>
           <line>35</line>
           <option name="timeStamp" value="49" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-6/src/main/java/cn/seheum/mybatis/executor/SimpleExecutor.java</url>
           <line>27</line>
           <option name="timeStamp" value="51" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-6/src/main/java/cn/seheum/mybatis/executor/statement/PreparedStatementHandler.java</url>
           <line>38</line>
           <option name="timeStamp" value="52" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-6/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSession.java</url>
           <line>35</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-6/src/main/java/cn/seheum/mybatis/session/defaults/DefaultSqlSessionFactory.java</url>
           <line>27</line>
           <option name="timeStamp" value="54" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-6/src/main/java/cn/seheum/mybatis/executor/statement/BaseStatementHandler.java</url>
           <line>46</line>
           <option name="timeStamp" value="55" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-6/src/test/java/cn/seheum/mybatis/test/ApiTest.java</url>
           <line>29</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-6/src/main/java/cn/seheum/mybatis/executor/BaseExecutor.java</url>
           <line>28</line>
           <option name="timeStamp" value="57" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-2/src/main/java/cn/seheum/mybatis/binding/MapperRegistry.java</url>
           <line>22</line>
           <option name="timeStamp" value="58" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/invoker/MethodInvoker.java</url>
           <line>19</line>
           <option name="timeStamp" value="59" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-2/src/main/java/cn/seheum/mybatis/binding/MapperProxyFactory.java</url>
           <line>21</line>
           <option name="timeStamp" value="61" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://C:/Program Files (x86)/Java/jdk1.8.0_351/src.zip!/java/lang/reflect/Proxy.java</url>
           <line>411</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>jar://C:/Program Files (x86)/Java/jdk1.8.0_351/src.zip!/java/lang/reflect/WeakCache.java</url>
           <line>102</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaObject.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="65" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaObject.java</url>
-          <line>47</line>
-          <option name="timeStamp" value="66" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/wrapper/BeanWrapper.java</url>
           <line>25</line>
           <option name="timeStamp" value="67" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaClass.java</url>
           <line>27</line>
           <option name="timeStamp" value="68" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/Reflector.java</url>
-          <line>75</line>
+          <line>76</line>
           <option name="timeStamp" value="69" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/Reflector.java</url>
-          <line>46</line>
+          <line>47</line>
           <option name="timeStamp" value="70" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/builder/xml/XMLConfigBuilder.java</url>
+          <line>93</line>
+          <option name="timeStamp" value="71" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/datasource/unpooled/UnpooledDataSourceFactory.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="72" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaObject.java</url>
+          <line>55</line>
+          <option name="timeStamp" value="73" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/mybatis-implement-7/src/main/java/cn/seheum/mybatis/reflection/MetaObject.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/mybatis-implement-5/src/test/java/cn/seheum/mybatis/test/ApiTest.java</url>

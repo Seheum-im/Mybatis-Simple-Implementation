@@ -13,6 +13,7 @@ import java.util.concurrent.ConcurrentHashMap;
 /**
  * @author seheum
  * @date 2023/7/10
+ * 对传输来的类进行解析，解析出类中的属性类型和方法，是整个反射过程中最终执行解析操作的类
  */
 public class Reflector {
 
